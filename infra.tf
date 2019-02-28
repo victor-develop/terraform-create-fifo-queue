@@ -19,6 +19,7 @@ module "hello_fifo_queue" {
   fifo_queue = true
   content_based_deduplication = true
 
+  visibility_timeout_seconds = 3600
   tags = {
     Service     = "hello"
     Environment = "dev"
